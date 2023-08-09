@@ -1,83 +1,33 @@
-// comentarios
-/** comentatio de 
-
-let ancho
-console.log("liam");
-
-alert("te amo")
-
-let example = prompt("Ingrese su nombre:")
-
-console.log(example)
-
-
-
-let frio = false;
-let calor = true 
-
-if (calor) {
-    console.log("Este codigo se ejecuta! Y decimos: ");
-    console.log("Apaguen la calefaccion! Me estoy asando! ");
-}
-if (frio) {
-    console.log("Este codigo se ejecuta! Y decimos: ");
-    console.log("Enciendan la calefaccion! ");
-} else{
-    console.log("No, no hace frio")
-}
-
-let botonLuz = "Encendido";
-console.log(botonLuz == "Apagado")
-console.log(botonLuz == "Encendido")
-
- * muchas lineas */
-
-
 // Introduccion
-alert("Bienvenido a la mini aventura!");
-
-// Preguntamos el nombre y saludamos
-let nombreJugador = prompt("Como te llamas?");
-
-alert(
-    "Hola!, ${nombreJugador}! Te encuentras en los caminos. Tu aventura esta por comenzar."
-);
+alert("Bienvenido a Castillo Bienes Raices");
 
 // Primera eleccion
-let eleccion1 = prompt("¿Quieres ir a la izquierda o a la derecha?") .toLowerCase();
 
+let eleccion1 = prompt("¿Quieres Alquilar o Comprar?").toLowerCase();
 
-if (eleccion1 === "izquierda") {
-    let eleccion11 = prompt ("Caminas por la izquierda y encuentras una cueva. Quieres entrar? (si/no)").toLowerCase();
-    if (eleccion11 === "si") {
-        alert("Entras en la cueva y encontraras un cofre lleno de oro! Felicidades ha ganado!");
-        
-    } else if (eleccion11 === "no") {
-        alert("Decides no entrar a la cueva y seguir tu camino. Sigue explorando!")
+if (eleccion1 === "Alquilar") {
+    let eleccion1 = prompt("En que la ciudad de Santa Fe.(si/no)").toLowerCase();
+    if (eleccion1 === "si") {
+        alert("En que zona?");
     }
+    switch = prompt('Ingrese una de las siguientes opciones:\n1.Zona norte\n2.Zona centro\n3.Zona sur')
+    switch (eleccion2) {
+        case "1":
+            alert("En zona norte, se encuentran disponibles propiedades!")
+            break;
+        case "2":
+            prompt("En zona centro, hay 10 propiedades disponibles")
+            break;
+        case "3":
+            console.log("En zona sur, no se encuentran propiedades disponibles")
+    }else if ('eleccion2') = prompt("")
+    alert("Gracias por elegirnos!");
+ }
+    answer = prompt(
+        "Desea consultar nuevamente? (si/no)"
+    ).toLowerCase();
 
-}
-alert("Gracias por jugar!");
 
-answer = prompt (
-    "Desea jugar de nuevamente? (si/no)"
-).toLowerCase();
-
-
-
-
-
-function Productos (nombre, descripcion, codigo, cantidad, descuento, precio, color) {
-    this.nombre = nombre;
-    this.descripcion = descripcion;
-    this.codigo = codigo;
-    this.cantidad = cantidad;
-    this.descuento = descuento;
-    this.precio = precio;
-}
-
-const zapatillasNike = new Productos("Nike", "Nike Air Jordan", 4859403, 2, false, 50.000);
-const remera = new Productos("Overside", "Outsider", 4.000, 4, true, 85, "Negro");
 
 
 
